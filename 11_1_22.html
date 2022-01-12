@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            box-sizing: border-box;
+word-wrap: break-word;
+
+
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+
+            width: 100%;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .head {
+            position: sticky;
+            top: 0px;
+        }
+
+        .topnav {
+            height: 20%;
+            background-color: #7e0909;
+        }
+
+        .bottom {
+
+            display: flex;
+
+        }
+
+        .logo {
+            width: 20%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .heading {}
+
+        .bottomnav {
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 50%;
+            color: #303030;
+        }
+
+        .bottomnav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 2%;
+            box-shadow: 0px 0px 5px;
+            color: color;
+            padding: .5%;
+            justify-content: space-between;
+            border-radius: 2px;
+            width: 73%;
+            height: 40%;
+        }
+
+        .bottomnav ul li {
+
+            width: fit-content;
+        }
+
+        .topnav {
+            display: flex;
+            padding: .7%;
+
+        }
+
+        .topnav div {}
+
+        .topnav ul {
+            list-style: none;
+            display: flex;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            width: 70%;
+
+        }
+
+        .heading {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 30%;
+
+        }
+
+        .heading img {
+            margin-left: 30%;
+
+            width: 90px;
+            height: 35px;
+        }
+
+        .bg {
+            overflow-x: hidden;
+            background: url('https://static.wixstatic.com/media/2e9798_6825a1d71e35449ebe50b12f9c3ca4ca~mv2.jpg/v1/fill/w_1200,h_363,al_c,q_85,usm_1.20_1.00_0.01/2e9798_6825a1d71e35449ebe50b12f9c3ca4ca~mv2.webp');
+            background-repeat: no-repeat;
+            background-size: 100vw 80vh;
+            background-position: 0px 0px;
+            height: 69%;
+            transition: all 4s;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+        }
+
+        .sectionheading {
+
+            width: 100%;
+            height: 30%;
+        }
+
+        .sectionheading p {
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: white;
+            font-size: 37px;
+            text-align: center;
+        }
+
+        .red {
+            height: 60vh;
+            width: 100vw;
+            background-color: #7e0909;
+            display: flex;
+        }
+
+        .red .para {
+
+            width: 70%;
+            display: flex;
+            font-family: sans-serif;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .red h1 {
+            display: inline-block;
+            height: 20%;
+
+            width: 100%;
+        }
+
+        .red .img {
+            width: 30%;
+            height: 90%;
+
+        }
+
+        .red img {
+            position: relative;
+            right: 170%;
+            top: 12%;
+            width: 800px;
+
+
+
+        }
+
+        svg {
+
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 400px;
+
+            z-index: 2;
+        }
+
+        path {
+
+            stroke-width: 4px;
+
+
+
+        }
+
+        .left {
+            left: 70px;
+        }
+
+        .right {
+            right: 70px;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <svg class="left">
+        <path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" stroke="red" onclick="left()"></path>
+    </svg>
+
+    <svg class="right">
+        <path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" stroke="red" onclick="right()"></path>
+    </svg>
+    <header id="header" class="head">
+        <div class="topnav">
+
+            <div style="display: flex;
+            justify-content:start;align-items: center;">
+                <ul style="overflow: hidden;">
+                    <li>IQAC</li>
+                    <li>NIRF</li>
+                    <li>NAAC</li>
+                </ul>
+
+            </div>
+
+            <div style="display: flex;
+            justify-content:end;align-items: center;">
+                <ul style="justify-content: space-around;">
+                    <li style="margin-right:8%;width: fit-content;">Student Login</li>
+                    <li style="width: fit-content;">WebMail</li>
+                    <li style="width: fit-content;">Alumni</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="bottom" style="background: white;">
+
+            <div class="logo">
+
+                <p style="text-align: center;display: inline-block;height: 80%;"><span
+                        style="font-family: sans-serif;font-weight: bolder;color:#173981;font-size:33px">College</span><br><span
+                        style="font-family: sans-serif;font-weight: 600;color:#173981;font-size:16px;letter-spacing: 2px;"><u>O,chandigarh</u></span><br><span
+                        style="font-family: sans-serif;;color:#173981;font-size:12px">education Since 1958</span></p>
+            </div>
+            <div class="side">
+                <div class="heading"><img
+                        src="https://static.wixstatic.com/media/2e9798_011eff210eac4e57b1f8e1989ef4f4d6~mv2.png/v1/fill/w_79,h_28,al_c,q_85,usm_1.20_1.00_0.01/om_edited.webp"
+                        alt=""></div>
+                <div class="bottomnav">
+
+                    <ul style="background:white;opacity:1;" id="ul">
+                        <li>Home</li>
+                        <li>Amenities</li>
+                        <li>Academics</li>
+                        <li>Student Zone</li>
+                        <li>Statutes</li>
+                        <li>Library</li>
+                        <li>More</li>
+                    </ul>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="bg" id="bg">
+
+        <div class="sectionheading">
+            <p>
+                Ranked Top College (All India Rank Band 101-150) <br>
+                by NIRF, Govt. of India</p>
+        </div>
+
+    </section>
+    <section class="red">
+        <div class="para">
+            <h1 style="color: white;font-size: 50p;font-size: 60px;">Under the Auspices of</h1>
+            <h1 style="color: rgb(235, 235, 134);font-size: 40px;">Maharshi Dayanand Saraswati Ji</h1>
+            <h1 style="color: white;font-size: 30px;">Founder,Arya Samaj</h1>
+        </div>
+        <div class="img"> <img
+                src="https://static.wixstatic.com/media/2e9798_a96e75b590f74a959e5bf19d8fd3ac04~mv2.png/v1/crop/x_0,y_1,w_1178,h_495/fill/w_979,h_409,al_c,q_90,usm_1.20_1.00_0.01/slider-0_edited_edited_edited.webp"
+                alt=""></div>
+
+    </section>
+
+
+    <script>
+        let i = 0;
+        const header = document.getElementById('header');
+        const bg = document.getElementById('bg');
+        const images = ['https://static.wixstatic.com/media/2e9798_402043bf01ff46f0acef37e7ede056de~mv2.jpg/v1/fill/w_966,h_585,al_c,q_85,usm_1.20_1.00_0.01/2e9798_402043bf01ff46f0acef37e7ede056de~mv2.webp', 'https://static.wixstatic.com/media/2e9798_6825a1d71e35449ebe50b12f9c3ca4ca~mv2.jpg/v1/fill/w_1200,h_363,al_c,q_85,usm_1.20_1.00_0.01/2e9798_6825a1d71e35449ebe50b12f9c3ca4ca~mv2.webp', 'https://static.wixstatic.com/media/2e9798_0f76cb86666249f6b6cae3679cbdf7a1~mv2.jpg/v1/fill/w_984,h_596,al_c,q_85,usm_1.20_1.00_0.01/2e9798_0f76cb86666249f6b6cae3679cbdf7a1~mv2.webp', 'https://static.wixstatic.com/media/2e9798_f51e06268fa34e20a2ddfc7ee5d1da59~mv2.jpg/v1/fill/w_984,h_596,al_c,q_85,usm_1.20_1.00_0.01/2e9798_f51e06268fa34e20a2ddfc7ee5d1da59~mv2.webp', 'https://static.wixstatic.com/media/2e9798_c5707e3fd49841868efbb1dd47a2bfef~mv2.jpg/v1/fill/w_984,h_596,al_c,q_85,usm_1.20_1.00_0.01/2e9798_c5707e3fd49841868efbb1dd47a2bfef~mv2.webp']
+        const ul = document.getElementById('ul');
+
+        const ram = document.getElementsByTagName('section')[0];
+        const bottom = document.getElementsByClassName('bottom')[0];
+
+
+        window.addEventListener('scroll', (event) => {
+            if (ram.getBoundingClientRect().top <= 100) {
+
+                bottom.style.opacity = ".5"
+                ul.style.background = "black";
+                ul.style.color = "white"
+                ul.style.opacity = "1";
+            } else {
+                bottom.style.opacity = "1";
+                ul.style.background = "white";
+                ul.style.color = "black"
+                ul.style.opacity = "1";
+
+            }
+            if (ram.getBoundingClientRect().top <= -60) {
+
+                header.classList.remove('head');
+            } else {
+
+                header.classList.add('head');
+
+            }
+
+
+        });
+
+        let interval = setInterval(right2,5000);
+        function left() {
+            clearInterval(interval);
+            if (i <= 0) {
+                i = images.length - 1;
+            } else {
+                i--;
+            }
+
+            bg.style.backgroundImage = `url(${images[i]})`;
+        }
+        function right() {
+            clearInterval(interval);
+            if (i >= images.length - 1) {
+                i = 0;
+            } else {
+                i++;
+            }
+
+            bg.style.backgroundImage = `url(${images[i]})`;
+        }
+        function right2() {
+           
+            if (i >= images.length - 1) {
+                i = 0;
+            } else {
+                i++;
+            }
+
+            bg.style.backgroundImage = `url(${images[i]})`;
+        }
+
+
+    </script>
+</body>
+
+</html>
